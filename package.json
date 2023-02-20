@@ -1,0 +1,29 @@
+{
+  "name": "fil.nft.contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "forge test -vv",
+    "deploy": "bash script/deploy.sh",
+    "abigen": "bash script/abigen.sh",
+    "example": "go run example/filnft/main.go",
+    "testcall": "bash script/testcall.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "rpcuri": {
+      "goerli": "https://eth-goerli.g.alchemy.com/v2/Kfks3shTyNrzc33ZSIiT8dNA4TDPuTX6"
+    },
+    "filnft": {
+      "contract": "0x760f4a44330D153Bf731cd8e253ddB51e473Fa45",
+      "sysmgr": "0x643fE3BAda1F6306a9128350EDdf064DAC6b75C9",
+      "datamgr": "0x643fE3BAda1F6306a9128350EDdf064DAC6b75C9"
+    } 
+  }
+}
